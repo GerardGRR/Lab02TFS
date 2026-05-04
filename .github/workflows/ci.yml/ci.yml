@@ -13,7 +13,7 @@ jobs:
       - name: Clonar el repositorio
         uses: actions/checkout@v4
 
-      - name: Clonar Node.js
+      - name: Instalar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Iniciar servidor
-        run: npm start &
+        run: node index.js &
 
       - name: Esperar servidor
         run: sleep 5
