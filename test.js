@@ -5,7 +5,7 @@ const options = {
   port: 3000,
   path: '/api/products',
   method: 'GET',
-};
+};//khdbhjsdfd
 
 const req = http.request(options, (res) => {
     if(res.statusCode === 403 || res.statusCode === 401) {
